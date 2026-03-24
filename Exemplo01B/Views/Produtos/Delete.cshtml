@@ -1,0 +1,18 @@
+@model Exemplo01B.Models.Produto
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<p> Tem certeza  que deseja excluir o produto "@Model.Nome"?</p>
+
+<form asp-action="Delete" method="post">
+    <button type="submit" onclick='return confirm("Deseja excluir o produto " + @System.Text.Json.JsonSerializer.Serialize(Model?.Nome ?? "") + "?")'>Sim, apagar</button>
+    <a href="@Url.Action(action: "Index")">Cancelar</a>
+</form>
+
+<div>
+    
+</div>

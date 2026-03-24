@@ -1,0 +1,94 @@
+/* Estilização para o formulário de edição de produtos conforme a imagem */
+
+/* Estiliza o container principal */
+.b-rwag1580no.container {
+    max-width: 420px;
+    margin: 32px auto;
+    background: #fffbe8;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+    padding: 32px 26px 22px 26px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Título do formulário */
+.b-rwag1580no h1 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Formulário */
+form {
+    margin-top: 0;
+}
+
+/* Cada grupo de campo */
+form > div > div {
+    margin-bottom: 18px;
+}
+
+/* Label */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #000000;
+}
+
+/* Input padrão */
+input[type="text"] {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1.3px solid #57ddff;
+    border-radius: 6px;
+    font-size: 1.02rem;
+    background: #e0fbff;
+    color: #000000;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Mensagem de erro padrão do ASP.NET */
+.field-validation-error {
+    color: #d92c2c;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* Botão Salvar */
+button[type="submit"] {
+    background: linear-gradient(60deg, #b9c8ff 30%, #a3b2ff 100%);
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.09rem;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 0;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    margin-top: 10px;
+    transition: background 0.15s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #b7f0eb 55%, #3ebcff 100%);
+    color: #000000;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 500px) {
+    .b-rwag1580no.container {
+        max-width: 98vw;
+        padding: 18px 7vw 14px 7vw;
+    }
+    .b-rwag1580no h1 {
+        font-size: 1.15rem;
+    }
+}
